@@ -1,5 +1,6 @@
 ! Copyright (C) 2013 Greg V.
-! See http://factorcode.org/license.txt for BSD license.
+! See http://www.wtfpl.net/about/ for WTFPL license.
+
 USING: kernel formatting assocs accessors sequences namespaces
        environment math.parser io io.servers
        furnace.actions http.server http.server.dispatchers
