@@ -4,7 +4,11 @@
   <table>
     <t:bind-each t:name="repos">
       <tr>
-        <td><t:label t:name="last_build_status" /></td>
+        <td width="44">
+          <t:if t:code="statusboardthings:success?"> <img style="margin-top: -4px" src="/static/success.png" /></t:if>
+          <t:if t:code="statusboardthings:progress?"><img style="margin-top: -4px" src="/static/progress.png" /></t:if>
+          <t:if t:code="statusboardthings:fail?">    <img style="margin-top: -4px" src="/static/fail.png" /></t:if>
+        </td>
         <td><t:label t:name="slug" /></td>
       </tr>
     </t:bind-each>
