@@ -1,0 +1,12 @@
+<?xml version='1.0' ?>
+<!DOCTYPE html>
+<t:chloe xmlns:t="http://factorcode.org/chloe/1.0">
+  <table>
+    <t:bind-each t:name="repos">
+      <tr>
+        <td><t:label t:name="last_build_status" /></td>
+        <td><t:label t:name="slug" /></td>
+      </tr>
+    </t:bind-each>
+  </table>
+</t:chloe>

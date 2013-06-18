@@ -1,0 +1,23 @@
+<?xml version='1.0' ?>
+<!DOCTYPE html>
+<t:chloe xmlns:t="http://factorcode.org/chloe/1.0">
+  <h1><a href="http://panic.com/statusboard/">Status Board</a> things by <a href="http://app.net/myfreeweb">@myfreeweb</a></h1>
+  <h2>Travis CI</h2>
+  <label>
+    GitHub username:
+    <input type="text" data-bind="value: travisUser" />
+  </label>
+  <a data-bind="attr: { href: travisLink }">Install</a>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
+  <script>
+    //<![CDATA[
+    function AppViewModel() {
+      this.travisUser = ko.observable();
+      this.travisLink = ko.computed(function() {
+        return "panicboard://?url=" + encodeURIComponent(location.href + "/travis/" + this.travisUser() ) + "&panel=table";
+      }, this);
+    }
+    ko.applyBindings(new AppViewModel());
+    //]]>
+  </script>
+</t:chloe>
