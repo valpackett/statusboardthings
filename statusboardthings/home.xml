@@ -2,12 +2,18 @@
 <!DOCTYPE html>
 <t:chloe xmlns:t="http://factorcode.org/chloe/1.0">
   <h1><a href="http://panic.com/statusboard/">Status Board</a> things by <a href="http://app.net/myfreeweb">@myfreeweb</a></h1>
+
   <h2>Travis CI</h2>
   <label>
     GitHub username:
     <input type="text" data-bind="value: travisUser" />
   </label>
   <a data-bind="attr: { href: travisLink }">Install</a>
+
+  <footer>
+    <a href="https://github.com/valpackett/statusboardthings">open source</a>
+  </footer>
+
   <script src="http://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.1/knockout-min.js"></script>
   <script>
     //<![CDATA[
@@ -21,6 +27,4 @@
     //]]>
   </script>
   <link rel="stylesheet" href="/static/style.css" />
-
-  <t:inspector t:name="vals"/>
 </t:chloe>
