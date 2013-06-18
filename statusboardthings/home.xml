@@ -3,12 +3,17 @@
 <t:chloe xmlns:t="http://factorcode.org/chloe/1.0">
   <h1><a href="http://panic.com/statusboard/">Status Board</a> things by <a href="http://app.net/myfreeweb">@myfreeweb</a></h1>
 
-  <h2>Travis CI</h2>
-  <label>
-    GitHub username:
-    <input type="text" data-bind="value: travisUser" />
-  </label>
-  <a data-bind="attr: { href: travisLink }">Install</a>
+  <section>
+    <h2>Travis CI</h2>
+    <div>
+      <label>
+        GitHub username:
+        <input type="text" data-bind="value: travisUser" />
+      </label>
+      <a data-bind="attr: { href: travisLink }">Install</a>
+    </div>
+    <img class="screenshot" width="1024" height="768" src="/static/travis-screenshot.png" />
+  </section>
 
   <footer>
     <a href="https://github.com/myfreeweb/statusboardthings">open source</a>
