@@ -14,7 +14,7 @@
     function AppViewModel() {
       this.travisUser = ko.observable();
       this.travisLink = ko.computed(function() {
-        return "panicboard://?url=" + encodeURIComponent(location.href + "/travis/" + this.travisUser() ) + "&panel=table";
+        return "panicboard://?url=" + encodeURIComponent(location.href + "/travis/" + this.travisUser()) + "&panel=table".replace('amp;', '');
       }, this);
     }
     ko.applyBindings(new AppViewModel());
