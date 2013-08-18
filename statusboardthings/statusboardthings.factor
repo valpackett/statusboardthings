@@ -1,5 +1,7 @@
-! Copyright (C) 2013 Greg V.
-! See http://www.wtfpl.net/about/ for WTFPL license.
+! Copyright © 2013 Greg V <floatboth@me.com>
+! This work is free. You can redistribute it and/or modify it under the
+! terms of the Do What The Fuck You Want To Public License, Version 2,
+! as published by Sam Hocevar. See the COPYING file for more details.
 
 USING: kernel formatting assocs accessors sequences namespaces
        environment math.parser io io.servers
